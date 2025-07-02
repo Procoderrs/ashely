@@ -1,245 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dodecahedron Preview – Ashley Home</title>
+    <link href="./src/output.css" rel="stylesheet" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Dodecahedron Preview – Ashley Home</title>
-	<link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-	<link rel="stylesheet" href="styles.css" />
-</head>
-
-<body class="bg-black font-display relative">
-	<div id="mouse-circle"></div>
+   <body class="bg-white font-display relative overflow-x-hidden">
+    <div class="pt-10 py-20 ">
 
 
-	<div class="fixed   left-16 top-4 z-100">
-		<h1 class="text-[42px] text-white">A.</h1>
+      <div class="lg:mx-40 mx-4  ">
+        <!-- Left Text -->
+        <div class=" flex lg:flex-row flex-col items-center justify-between relative">
+        <div>
+          <h2 class="lg:text-[64px] text-4xl text-black font-bold leading-tight">
+            <span>Discover</span> <span>Our</span> <span class="font-thin lg:hidden">Studio</span><br /><span class="font-thin hidden lg:inline">Our</span ><span class="font-thin hidden lg:inline"> Studio</span>
+          </h2>
+          <p class="py-6 text-[15px] text-[#00000080] max-w-[400px]">
+            At our design studio, we are a collective of talented individuals ignited by a passion for transforming ideas into reality. With a harmonious blend of diverse background and a vast array of skills sets, we join forces to create compelling solutions for our esteemed clients.
+          </p>
+          <p class="py-6 max-w-[400px] text-[15px] text-[#00000080]  ">
+            Collaboration is at the heart of what we do. Our team thrives on the
+            synergy that arises when unique perspective coverge, fostering an
+            enviroment of boundless creativity. By harnessing our collective
+            expertise, we produce extra ordinary results that consistently
+            surpass expectations.
+          </p>
+
+
+
+           <div class="px-3 lg:hidden  flex gap-12 ">
+<div class="relative">
+<img class="rounded-full object-cover object-top h-24 w-24" src="./src/images/2.jpg" alt="designer">
+<div class="absolute bottom-2 -right-1 w-8 h-8 rounded-full bg-[#ff9800]">
+<p class="flex items-center pt-1 justify-center text-center text-3xl">"</p>
+</div>
+</div>
+
+<h4 class="lg:max-w-64 max-w-[300px] "><span class="lg:text-lg text-base text-black font-medium">Passionately Creating</span> <span class="font-thin text-lg text-black">Design</span> <br><span class="font-thin text-lg text-black">Wonders:</span> <span class="text-lg text-black font-medium">Unleashing</span> <span class="font-thin text-lg text-black">Boundless Creativity:</span></h4>
 	</div>
+        </div>  
+       
+        
 
-	<div class="fixed   right-16 top-8 ">
-		<img class="w-8 text-white" src="./src/images/menu.svg" alt="" />
+        <!-- Right Image with SVG Behind -->
+        <div class="relative  flex items-center justify-center">
+          <!-- SVG Animation -->
+          <!-- <div class="absolute top-0 right-0 border-gray-300  -z-10 opacity-30 w-[300px] h-[auto]">
+    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move"></path>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move"></path>
+    </svg>
+  </div> -->
+
+          <!-- Foreground Image -->
+          <img
+  src="./src/images/1.jpg"
+  alt="img1"
+  class="animate-img relative z-10 lg:w-[300px] w-[300px]   h-auto object-cover lg:pt-28 py-12"
+/>
+        </div>
+         </div>
+
+         <div class="px-3 hidden  lg:flex gap-12 ">
+<div class="relative">
+<img class="rounded-full object-cover object-top h-24 w-24" src="./src/images/2.jpg" alt="designer">
+<div class="absolute bottom-2 -right-1 w-8 h-8 rounded-full bg-[#ff9800]">
+<p class="flex items-center pt-1 justify-center text-center text-3xl">"</p>
+</div>
+</div>
+
+<h4 class="max-w-64"><span class="text-lg text-black font-medium">Passionately Creating</span> <span class="font-thin text-lg text-black">Design</span> <br><span class="font-thin text-lg text-black">Wonders:</span> <span class="text-lg text-black font-medium">Unleashing</span> <span class="font-thin text-lg text-black">Boundless Creativity:</span></h4>
 	</div>
-
-	<div class="fixed    top-[550px] left-16 h-[350px] w-[300px] p-4 transform -rotate-90 origin-top-left">
-		<h3 class="text-xs uppercase tracking-wider text-white">homepage</h3>
-	</div>
-
-	<!--  <div id="loading" class="text-white w-full h-full text-center">
-    <div id="pre-heading">
-      <p class="text-5xl font-thin ">
-        <span class="animate-word delay-0">Pioneering</span>
-        <span class="animate-word delay-1 font-bold">Creative</span>
-        <span class="animate-word delay-2">Excellence</span>
-      </p>
-    </div>
-
-
-    <button id="pre-btn"
-      class=" hidden  opacity-0  relative  animate-fade-in delay-[3000ms] bg-yellow-400 w-64 h-12 text-xl font-semibold rounded">
-
-    </button>
-
-
-    <p id="pre-name" class="opacity-0 hidden  text-2xl font-thin animate-fade-in delay-[4000ms]">ashley.com</p>
-
+			
+		</div>
+      </div>
+      <!-- Third section -->
+	<div class="bg-black lg:pt-32  lg:py-0 px-4 lg:px-0 py-26  z-[200]">
+		<div class="flex gap-12 text-[#696969] items-center justify-center lg:justify-end">
+  <div>
+    <p class="text-center">
+    <span>Professionals focused on helping your brand</span><br> 
+    <span>grow and move forward.</span>
+  </p>
   </div>
- -->
 
-	<div id="main-content " class="text-white ">
-		<div class="shadow"></div>
-		<div class="dodecahedron  z-30 " id="dodecahedron">
+  <!-- Vertical left border -->
+  <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
+</div>
+<div class="lg:px-40  z-[1000]  relative overflow-x-hidden">
+   
 
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div class="pentagon">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-	</div>
-	<!-- <div class="border-b sticky top-0 bg-black z-50 border-gray-600">
-<div class="flex items-center justify-between p-4    ">
-			<div class="">
-			<h1 class="text-[42px] text-white">A.</h1>
-		</div>
-		<div class=" ">
-			<img class="w-8 text-white" src="./src/images/menu.svg" alt="" />
-		</div>
-		</div>
-	</div> -->
+<div class="absolute right-0 lg:top-6 top-12 z-10  ">
+<div class="dodecahedron-2">
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+</div>
+<div class="flex flex-col relative"> 
 
-	<div class="pb-26  lg:mx-40 mx-4 text-white bg-black">
-
-		<h2 class="">
-			<span class="text-[74px]">Designing</span><span class="text-[74px] font-thin"> a Better </span><br /><span
-				class="leading-[100px] text-[74px]">World <span class="text-[74px] font-thin">Today</span></span>
-		</h2>
-
-		<p class="font-light text-base text-[#696969] mt-12 max-w-sm">
-			Welcome to our world of endless imagination and boundless creativity.
-			Together, let's embark on a remarkable journey where dreams become
-			tangible realities.
-		</p>
+  <div class="lg:flex pb-4 lg:pb-0    gap-3">
+<button class="w-68 h-20 overflow-hidden rounded-full shadow-md hover:scale-105 transition-transform duration-300">
+    <img
+      src="./src/images/3.jpg"
+      alt="Button Image"
+      class="w-full hidden lg:inline h-full object-top object-cover"
+    />
+  </button>
+  <h5 class="lg:text-[74px] text-center  text-4xl text-white"><span >Unique</span> <span class="font-thin">Ideas</span>
+   </h5>
+</div>
+<div class="flex flex-col text-center    lg:flex-row gap-3 items-center ">
+  <h5 class="lg:text-[74px] text-4xl text-white"><span>For Your </span> <span class="font-thin">Business.</span></h5>
+  <button class="lg:w-64 w-56 mt-12 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
+  <span class="text-black text-sm text-center tracking-wide">WHAT WE DO</span>
+  <img
+    src="./src/images/right-arrow.svg"
+    alt="Arrow"
+    class="w-8 h-8 p-1 bg-black  rounded-full"
+  />
+</button>
+</div>
+</div>
 
 
 
-		<div class="mt-12 flex relative items-center justify-between text-black">
-			<div class="flex items-center flex-col lg:flex-row">
-				<div class="bg-[#ff9800] cursor-pointer hover:bg-amber-500 flex items-center gap-4 rounded-4xl px-8 py-4">
-					<p class="text-xs tracking-wide">WHAT WE DO</p>
-					<div class=" ">
-						<img class="w-8 h-8 p-2 bg-black rounded-full flex items-center justify-center" src="./src/images/arrow.svg"
-							alt="" />
-					</div>
-				</div>
+<div class="grid lg:grid-cols-4 grid-cols-1  pt-48"> 
+<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+  <h6 class="text-white text-xl font-medium">Branding and Identity Design</h6>
+  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
+<img
+    src="./src/images/right-arrow-1.svg"
+    alt="Arrow"
+    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full"
+  />
+</div>
+<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+  <h6 class="text-white text-xl font-medium">Website Design and Development</h6>
+  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
+<img
+    src="./src/images/right-arrow-1.svg"
+    alt="Arrow"
+    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
+  />
+</div>
+<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+  <h6 class="text-white text-xl font-medium">Advertising and Marketing Compaigns</h6>
+  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
+<img
+    src="./src/images/right-arrow-1.svg"
+    alt="Arrow"
+    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
+  />
+</div>
+<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+  <h6 class="text-white text-xl font-medium">Creative Consulting and Development</h6>
+  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
+<img
+    src="./src/images/right-arrow-1.svg"
+    alt="Arrow"
+    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
+  />
+</div>
+</div>
 
-				<div class="flex items-center gap-4 rounded-4xl px-12 py-4">
-					<p class="text-xs text-white tracking-wide">VIEW WORKS</p>
-					<div class=" ">
-						<img class="w-8 h-8 p-2 bg-[#383838] text-white rounded-full flex items-center justify-center"
-							src="./src/images/arrow.svg" alt="" />
-					</div>
-				</div>
-			</div>
 
-			<!-- ⭕️ wrapper ------------------------------------------------------------>
-			<div class="relative hidden lg:flex items-center justify-center w-30 h-30">
-				<!-- 🔄 rotating text ring (SVG) -->
-				<svg viewBox="0 0 200 200" class="absolute inset-0 animate-spin-slow" fill="none">
-					<!-- invisible circle that the text follows -->
-					<defs>
-						<path id="circlePath" d="M 100, 100
-           m -90, 0
-           a 90,90 0 1,1 180,0
-           a 90,90 0 1,1 -180,0" />
-					</defs>
-
-					<!-- the repeating label -->
-					<text class="fill-white text-[14px] tracking-widest uppercase" textLength="560">
-						<textPath xlink:href="#circlePath" startOffset="0">
-							scroll down  –  scroll down 
-						</textPath>
-					</text>
-				</svg>
-
-				<!-- 🟡 the button in the centre -->
-				<button
-					class="group w-16 h-16 flex items-center justify-center rounded-full bg-[#ff9800] transition-colors duration-200 hover:bg-amber-500">
-					<img src="./src/images/down-arrow.svg" alt="down arrow"
-						class="w-8 h-8 p-2 bg-black rounded-full transition-transform duration-300 ease-in-out group-hover:scale-125" />
-				</button>
-			</div>
+</div>
 		</div>
 
 
+    <!-- 4th section -->
+<div class="bg-white ">
+<div class="px-40 py-20 ">
+<div class="flex items-center justify-between">
+  <div>
+    <h5 class="text-[68px] leading-[90px] font-medium"><span>Meet</span> <br> <span>Our</span> <br> <span>Team</span></h5>
+    <p class="max-w-64 text-[#00000080]">
+      <span>We are talented individuals who are passionate about bringing ideas to life. With a diverse range of backgrounds and skill sets, we collaborate to produce effective solutions for our clien</span>
+    <span>Together, our creative team is committed to delivering impactful work that exceeds expectations.
 
+</span>
+    </p>
+  </div>
 
-	</div>
-	<div class="bg-white lg:pt-32 pt-12 pb-12">
-		<div class="lg:mx-40 mx-4 flex items-center justify-between">
-			<div>
-				<h2>
-					<span class="lg:text-[74px] text-xl text-black">Discover</span> <br /><span class="text-[74px]">Our</span>
-					<span class="font-thin text-black"><span class="text-[74px] font-thin">Studio</span></span>
-				</h2>
-				<p class="py-6  text-[#696969] max-w-[400px]">
-					At our design studio, we are collective of talented individuals ignitied by our own unwavering passions for
-					transforming ideas into reality.With a harmonious blend of diverse background and a vast array of skill sets,
-					we join forces to create compelling solutions for our esteemed clients.
-				</p>
-				<p class="py-6 max-w-[400px] text-[#696969] ">
-					Collaboration is at the heart of what we do. Our team thrives on the synergy that arises when unique
-					perspective coverge, fostering an enviroment of boundless creativity. By harnessing our collective expertise,
-					we produce extra ordinary results that consistently surpass expectations.
-				</p>
-			</div>
-
-			<div>
-				<img class="w-sm h-full pt-28" src="./src/images/1.jpg" alt="">
-			</div>
-		</div>
-	</div>
-	<script src="./script.js" defer></script>
-</body>
-
+</div>
+</div>
+</div>
+    
+  </body>
 </html>
