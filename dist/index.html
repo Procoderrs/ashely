@@ -1,211 +1,1532 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dodecahedron Preview – Ashley Home</title>
-    <link href="./src/output.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dodecahedron Preview – Ashley Home</title>
+  <link href="./src/output.css" rel="stylesheet" />
 
-   <body class="bg-white font-display relative overflow-x-hidden">
-    <div class="pt-10 py-20 ">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="font-display ">
+
+  <!-- <div id="pre-heading" class="flex justify-center items-center h-screen flex-col gap-2 text-4xl font-medium">
+    <h2>
+      <span>Pioneering</span>
+      <span>Creating </span>
+      <span>Excellence</span>
+
+    </h2>
+  </div>
+
+  <div id="pre-btn" class="hidden flex justify-center items-center h-screen">
+    <div class="relative">
+      <div class="border-[3px] border-yellow-400 w-64 h-16 animate-border-slide"></div>
+    </div>
+  </div>
+
+  <div id="pre-name" class="hidden flex justify-center items-center h-screen text-4xl font-bold">
+    Ashley.com
+  </div>  -->
 
 
-      <div class="lg:mx-40 mx-4  ">
-        <!-- Left Text -->
-        <div class=" flex lg:flex-row flex-col items-center justify-between relative">
-        <div>
-          <h2 class="lg:text-[64px] text-4xl text-black font-bold leading-tight">
-            <span>Discover</span> <span>Our</span> <span class="font-thin lg:hidden">Studio</span><br /><span class="font-thin hidden lg:inline">Our</span ><span class="font-thin hidden lg:inline"> Studio</span>
-          </h2>
-          <p class="py-6 text-[15px] text-[#00000080] max-w-[400px]">
-            At our design studio, we are a collective of talented individuals ignited by a passion for transforming ideas into reality. With a harmonious blend of diverse background and a vast array of skills sets, we join forces to create compelling solutions for our esteemed clients.
-          </p>
-          <p class="py-6 max-w-[400px] text-[15px] text-[#00000080]  ">
-            Collaboration is at the heart of what we do. Our team thrives on the
-            synergy that arises when unique perspective coverge, fostering an
-            enviroment of boundless creativity. By harnessing our collective
-            expertise, we produce extra ordinary results that consistently
-            surpass expectations.
-          </p>
 
 
 
-           <div class="px-3 lg:hidden  flex gap-12 ">
-<div class="relative">
-<img class="rounded-full object-cover object-top h-24 w-24" src="./src/images/2.jpg" alt="designer">
-<div class="absolute bottom-2 -right-1 w-8 h-8 rounded-full bg-[#ff9800]">
-<p class="flex items-center pt-1 justify-center text-center text-3xl">"</p>
-</div>
-</div>
+  <div id="mouse-circle"></div>
+  <!--   <div id="main-content-1" class="hidden">
+ -->
+  <!--  <div class=" relative  ">
 
-<h4 class="lg:max-w-64 max-w-[300px] "><span class="lg:text-lg text-base text-black font-medium">Passionately Creating</span> <span class="font-thin text-lg text-black">Design</span> <br><span class="font-thin text-lg text-black">Wonders:</span> <span class="text-lg text-black font-medium">Unleashing</span> <span class="font-thin text-lg text-black">Boundless Creativity:</span></h4>
-	</div>
-        </div>  
-       
-        
 
-        <!-- Right Image with SVG Behind -->
-        <div class="relative  flex items-center justify-center">
-          <!-- SVG Animation -->
-          <!-- <div class="absolute top-0 right-0 border-gray-300  -z-10 opacity-30 w-[300px] h-[auto]">
-    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move"></path>
-    </svg>
+    <div class=" div-0 overflow-hidden   z-0   w-full h-screen md:h-full bg-black">
+      <div id="main-content" class="text-white">
+        <div class="shadow"></div>
+        <div class="dodecahedron" id="dodecahedron">
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <div class=" div-1 overflow-hidden z-0 hidden xl:block    w-full h-screen md:h-full ">
+      <div id="main-content" class="text-white">
+        <div class="shadow"></div>
+        <div class="dodecahedron-4 absolute top-10 left-0" id="dodecahedron-4">
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" div-2 overflow-hidden  z-0 xl:block  w-full h-screen md:h-full bg-black">
+      <div id="main-content" class="text-white">
+        <div class="shadow"></div>
+        <div class="dodecahedron-5" id="dodecahedron-5">
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-5">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div> -->
 
-          <!-- Foreground Image -->
-          <img
-  src="./src/images/1.jpg"
-  alt="img1"
-  class="animate-img relative z-10 lg:w-[300px] w-[300px]   h-auto object-cover lg:pt-28 py-12"
-/>
-        </div>
-         </div>
+  <!-- sidebar  -->
+  <div class="hidden xl:block mix-blend-difference text-white header">
+    <div class="fixed left-16 top-8 z-30">
+      <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
+    </div>
+    <!-- navbar -->
+    <nav class="right-16 hidden xl:block lg:fixed top-12 z-30 bg-transparent menu">
+      <img class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
+    </nav>
+    <div class="fixed top-[550px] left-16 h-[350px] w-[300px] p-4 z-30 transform -rotate-90 origin-top-left">
+      <h3 class="text-xs uppercase tracking-wider lg:block text-white  z-30">
+        homepage
+      </h3>
+    </div>
+  </div>
+  <!-- mobile navbar -->
 
-         <div class="px-3 hidden  lg:flex gap-12 ">
-<div class="relative">
-<img class="rounded-full object-cover object-top h-24 w-24" src="./src/images/2.jpg" alt="designer">
-<div class="absolute bottom-2 -right-1 w-8 h-8 rounded-full bg-[#ff9800]">
-<p class="flex items-center pt-1 justify-center text-center text-3xl">"</p>
-</div>
-</div>
 
-<h4 class="max-w-64"><span class="text-lg text-black font-medium">Passionately Creating</span> <span class="font-thin text-lg text-black">Design</span> <br><span class="font-thin text-lg text-black">Wonders:</span> <span class="text-lg text-black font-medium">Unleashing</span> <span class="font-thin text-lg text-black">Boundless Creativity:</span></h4>
-	</div>
-			
-		</div>
+
+
+  <!-- banner   -->
+  <div class="bg-black">
+
+    <section data-bg="dark" class="  relative bg-transparent  overflow-hidden ">
+      <!-- mobile-nav -->
+      <div
+        class="xl:hidden flex items-center bg-black p-6 fixed top-0 justify-between text-white   border-zinc-800 border-b z-[999]   w-full">
+        <h2 class="text-white  text-4xl"><a href="/">A.</a></h2>
+        <img class="w-8 text-white " src="./src/images/menu.svg" alt="" />
       </div>
-      <!-- Third section -->
-	<div class="bg-black lg:pt-32  lg:py-0 px-4 lg:px-0 py-26  z-[200]">
-		<div class="flex gap-12 text-[#696969] items-center justify-center lg:justify-end">
-  <div>
-    <p class="text-center">
-    <span>Professionals focused on helping your brand</span><br> 
-    <span>grow and move forward.</span>
-  </p>
+
+      <div class=" lg:px-40 h-screen px-4 min-h-screen  bg-transparent ">
+        <h2 class="pt-24 lg:pt-8  hidden sm:block text-white text-4xl lg:text-[74px]">
+          <span class="">Designing</span><span class=" font-thin"> a Better
+          </span> <br> <span class="leading-[100px]  ">World</span> <span class="font-thin ">Today</span><br /><span
+            class="leading-[100px] sm:hidden ">World</span> <span class="font-thin sm:hidden ">Today</span>
+        </h2>
+
+        <p class="font-light text-base text-[#696969]  md:pt-12 pt-36 sm:pt-12  max-w-sm">
+          Welcome to our world of endless imagination and boundless
+          creativity. Together, let's embark on a remarkable journey where
+          dreams become tangible realities.
+        </p>
+
+        <div class=" flex mt-5 relative items-center justify-between text-black">
+          <div class="flex items-center flex-col sm:flex-row">
+            <button
+              class="lg:w-64 w-56 mt-12 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex  content-center items-center gap-12 bg-[#ff9800] hover:bg-amber-500 px-6">
+              <span class="text-black text-xs flex items-center justify-center text-center tracking-wide">WHAT WE
+                DO</span>
+              <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-8 h-8 p-1 bg-black rounded-full" />
+            </button>
+
+            </button>
+
+            <button
+              class="lg:w-64 w-56 pt-4 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex  content-center items-center gap-12 bg-transparent  px-6">
+              <span
+                class="text-white  uppercase text-xs flex items-center justify-center text-center tracking-wide">view
+                works</span>
+              <img src="./src/images/down-arrow.svg" alt="Arrow"
+                class="w-8 h-8 p-1 bg-[#383838] -rotate-90 rounded-full" />
+            </button>
+          </div>
+
+          <!-- ⭕️ wrapper ------------------------------------------------------------>
+          <div class="relative hidden  lg:flex items-center justify-center ">
+            <!-- Spinning circular text -->
+            <svg viewBox="0 0 300 300" class="absolute  animate-spin-slow" fill="none">
+              <defs>
+                <path id="circlePath" d="M100 100 m-70 0 a70 70 0 1 1 140 0 a70 70 0 1 1 -140 0" />
+              </defs>
+
+              <text class="fill-zinc-600 text-sm tracking-widest uppercase" textLength="1000">
+                <textPath xlink:href="#circlePath" startOffset="0">
+                  scroll down – scroll down – scroll down – scroll down –
+                </textPath>
+              </text>
+            </svg>
+
+            <!-- Center arrow button (now hard‑centered) -->
+            <button
+              class="absolute inset-0 m-auto   z-10 group w-20 h-20 flex items-center justify-center rounded-full bg-[#ff9800] transition-colors  mr-0 duration-200 hover:bg-amber-500">
+              <!-- rotate-180 flips “down” arrow so it points up -->
+              <span class="bg-black p-1 rounded-full">
+                <img src="./src/images/left-arrow.svg" alt="up arrow"
+                  class="w-8 h-8  -rotate-90  transition-transform duration-300 ease-in-out group-hover:scale-125" />
+              </span>
+
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class=" div-0 overflow-hidden   z-0   w-full  bg-black">
+        <div id="main-content" class="text-white">
+          <div class="shadow"></div>
+          <div class="dodecahedron" id="dodecahedron">
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+      <div class=" div-1 overflow-hidden z-0     w-full   ">
+        <div id="main-content" class="text-white">
+          <div class="shadow"></div>
+          <div class="dodecahedron-4 absolute top-10 left-0 hidden custom:block" id="dodecahedron-4">
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-4">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class=" div-2 overflow-hidden  z-0   w-full   bg-black">
+        <div id="main-content" class="text-white">
+          <div class="shadow"></div>
+          <div class="dodecahedron-5 absolute bottom-0 left-0 hidden custom:block" id="dodecahedron-4" id="dodecahedron-5">
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="pentagon-5">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </section>
   </div>
 
-  <!-- Vertical left border -->
-  <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
-</div>
-<div class="lg:px-40  z-[1000]  relative overflow-x-hidden">
-   
 
-<div class="absolute right-0 lg:top-6 top-12 z-10  ">
-<div class="dodecahedron-2">
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-  <div class="pentagon-2"><div></div><div></div><div></div><div></div><div></div></div>
-</div>
-</div>
-<div class="flex flex-col relative"> 
-
-  <div class="lg:flex pb-4 lg:pb-0    gap-3">
-<button class="w-68 h-20 overflow-hidden rounded-full shadow-md hover:scale-105 transition-transform duration-300">
-    <img
-      src="./src/images/3.jpg"
-      alt="Button Image"
-      class="w-full hidden lg:inline h-full object-top object-cover"
-    />
-  </button>
-  <h5 class="lg:text-[74px] text-center  text-4xl text-white"><span >Unique</span> <span class="font-thin">Ideas</span>
-   </h5>
-</div>
-<div class="flex flex-col text-center    lg:flex-row gap-3 items-center ">
-  <h5 class="lg:text-[74px] text-4xl text-white"><span>For Your </span> <span class="font-thin">Business.</span></h5>
-  <button class="lg:w-64 w-56 mt-12 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
-  <span class="text-black text-sm text-center tracking-wide">WHAT WE DO</span>
-  <img
-    src="./src/images/right-arrow.svg"
-    alt="Arrow"
-    class="w-8 h-8 p-1 bg-black  rounded-full"
-  />
-</button>
-</div>
-</div>
+  <!-- 2nd section -->
+  <section data-bg="light" class="  py-12 bg-white ">
+    <div class="lg:px-40  px-8">
+      <!-- Left Text -->
+      <div class=" relative">
+        <div class="flex flex-col lg:flex-row  lg:items-center lg:justify-between gap-12">
+          <div class="flex   flex-col ">
+            <h2 class="lg:text-[64px] text-4xl text-black md:font-bold font-medium leading-tight">
+              <span>Discover</span> <span class="lg:hidden">Our</span>
+              <span class="font-thin lg:hidden">Studio</span><br /><span class="hidden lg:inline">Our</span><span
+                class="font-thin hidden lg:inline"> Studio</span>
+            </h2>
+            <div>
+              <p class="py-6 font-light text-[15px] lg:max-w-[450px] text-[#00000080] ">
+                At our design studio, we are a collective of talented individuals
+                ignited by a passion for transforming ideas into reality. With a
+                harmonious blend of diverse background and a vast array of skills
+                sets, we join forces to create compelling solutions for our
+                esteemed clients.
+              </p>
+              <p class="py-6 font-light  text-[15px] lg:max-w-[450px] text-[#00000080]">
+                Collaboration is at the heart of what we do. Our team thrives on
+                the synergy that arises when unique perspective coverge, fostering
+                an enviroment of boundless creativity. By harnessing our
+                collective expertise, we produce extra ordinary results that
+                consistently surpass expectations.
+              </p>
+            </div>
 
 
 
-<div class="grid lg:grid-cols-4 grid-cols-1  pt-48"> 
-<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
-  <h6 class="text-white text-xl font-medium">Branding and Identity Design</h6>
-  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
-<img
-    src="./src/images/right-arrow-1.svg"
-    alt="Arrow"
-    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full"
-  />
-</div>
-<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
-  <h6 class="text-white text-xl font-medium">Website Design and Development</h6>
-  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
-<img
-    src="./src/images/right-arrow-1.svg"
-    alt="Arrow"
-    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
-  />
-</div>
-<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
-  <h6 class="text-white text-xl font-medium">Advertising and Marketing Compaigns</h6>
-  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
-<img
-    src="./src/images/right-arrow-1.svg"
-    alt="Arrow"
-    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
-  />
-</div>
-<div class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
-  <h6 class="text-white text-xl font-medium">Creative Consulting and Development</h6>
-  <p class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">Our creative agency is a team of professionals focused on helping you...</p>
-<img
-    src="./src/images/right-arrow-1.svg"
-    alt="Arrow"
-    class="w-8 h-8 p-1 bg-[#ff9800]  rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8"
-  />
-</div>
-</div>
+
+            <div class=" hidden lg:flex flex-col items-center ">
+              <div class="flex  gap-2">
+                <div class="relative ">
+                  <img class=" rounded-full w-20 h-20   relative" src="./src/images/emma.jpg" alt="designer"
+                    width="100px" height="100px" />
+                  <div class="absolute bottom-8 -right-1 hidden lg:inline w-6 h-6 rounded-full bg-[#ff9800]">
+                    <p class="flex items-center pt-1 justify-center text-center text-xl">
+                      "
+                    </p>
+                  </div>
+                </div>
+
+                <h4 class=" ml-3">
+                  <span class="lg:text-lg   text-xs   sm:text-base text-black font-medium">Passionately Creating</span>
+                  <span class="font-thin  text-xs  sm:text-base  lg:text-lg  text-black">Design</span>
+                  <span class="font-thin   text-xs  sm:text-base lg:text-lg  text-black lg:hidden">Wonders:</span>
+
+                  <span class="lg:text-lg  text-xs  sm:text-base  text-black font-medium">Unleashing</span>
+                  <span class="font-thin  text-xs  sm:text-base lg:text-lg  text-black lg:hidden">Boundless
+                    Creativity:</span>
+                  <br />
+                  <span class="font-thin  text-xs   sm:text-base lg:text-lg text-black hidden lg:inline">Wonders:</span>
+                  <span class="lg:text-lg  text-xs  sm:text-base   hidden text-black font-medium">Unleashing</span>
+                  <span class="font-thin  text-xs  sm:text-base hidden lg:text-lg text-black lg:hidden">Boundless
+                    Creativity:</span>
+                  <span class="font-thin   text-xs sm:text-base lg:text-lg text-black hidden lg:inline">Boundless
+                    Creativity:</span>
+                </h4>
+
+              </div>
+              <!-- <div class="px-3 hidden lg:flex gap-12">
+          <div class="relative">
+            <img class="rounded-full object-cover object-top h-24 w-24" src="./src/images/2.jpg" alt="designer" />
+            <div class="absolute bottom-2 -right-1 w-8 h-8 rounded-full bg-[#ff9800]">
+              <p class="flex items-center pt-1 justify-center text-center text-3xl">
+                "
+              </p>
+            </div>
+          </div>
+
+          <h4 class="max-w-64">
+            <span class="text-lg text-black font-medium">Passionately Creating</span>
+            <span class="font-thin text-lg text-black">Design</span>
+            <br /><span class="font-thin text-lg text-black">Wonders:</span>
+            <span class="text-lg text-black font-medium">Unleashing</span>
+            <span class="font-thin text-lg text-black">Boundless Creativity:</span>
+          </h4>
+        </div>  -->
 
 
-</div>
-		</div>
+              <img src="./src/images/1.jpg" alt="img1"
+                class="animate-img relative z-0 w-[400px] lg:hidden   h-auto object-cover  lg:pt-28 py-12" />
 
+
+            </div>
+          </div>
+
+          <div class=" pt-12  lg:pt-20 lg:pb-10 relative overflow-hidden">
+
+            <!--  <div
+              class="absolute inset-0 flex justify-center items-center z-0 pointer-events-none opacity-40"
+            >
+              <svg
+                viewBox="0 0 300 1404"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[300px] h-auto text-[#D0D0D0]"
+              >
+                <g fill="#D0D0D0">
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z"
+                  />
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M150 0L150 1404L149 1404L149 0L150 0Z"
+                  />
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z"
+                  />
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M300 1175H0V1174H300V1175Z"
+                  />
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z"
+                  />
+                  <path
+                    class="mil-move"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z"
+                  />
+                </g>
+              </svg>
+            </div> -->
+            <!-- ■■■ END of new SVG ■■■ -->
+            <!-- Foreground Image -->
+            <img src="./src/images/1.jpg" alt="img1"
+              class="animate-img relative z-0 w-[400px] hidden lg:inline   h-auto object-cover  lg:pt-28 py-12" />
+          </div>
+
+        </div>
+
+        <!-- Right Image with SVG Behind -->
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Third section -->
+  <section data-bg="dark" class="bg-black  lg:pt-32 lg:py-0 px-4 lg:px-0 py-26 ">
+    <div class="flex gap-12 text-[#696969] items-center justify-center lg:justify-end">
+      <div>
+        <p class="text-center font-light">
+          <span>Professionals focused on helping your brand</span><br />
+          <span>grow and move forward.</span>
+        </p>
+      </div>
+
+      <!-- Vertical left border -->
+      <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
+    </div>
+    <div class="lg:px-40 z-0 relative overflow-x-hidden">
+      <div class="absolute right-0 lg:top-6 top-12 z-10">
+        <div class="dodecahedron-2">
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="pentagon-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col relative pt-5">
+        <div class="lg:flex pb-4 lg:pb-0 gap-3 ">
+          <button
+            class="w-68 h-20 overflow-hidden rounded-full shadow-md hover:scale-105 transition-transform duration-300">
+            <img src="./src/images/3.jpg" alt="Button Image"
+              class="w-full hidden lg:inline h-full object-top object-cover" />
+          </button>
+          <h5 class="lg:text-[74px] text-center text-4xl text-white">
+            <span>Unique</span> <span class="font-thin">Ideas</span>
+          </h5>
+        </div>
+        <div class="flex flex-col text-center lg:flex-row gap-3 z-10 items-center">
+          <h5 class="lg:text-[74px] text-center text-4xl text-white">
+            <span>For Your </span> <span class="font-thin hidden sm:inline">Business</span> <br>
+          </h5>
+          <button
+            class="lg:w-64 w-56 mt-12 lg:mt-0 lg:h-20 h-14 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex  content-center items-center gap-12 bg-[#ff9800] hover:bg-amber-500 px-6">
+            <span class="text-black text-xs flex items-center justify-center text-center tracking-wide">WHAT WE
+              DO</span>
+            <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-8 h-8 p-1 bg-black rounded-full" />
+          </button>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-4 grid-cols-1 lg:pt-48 pt-24">
+        <div
+          class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-10 py-8 group overflow-hidden">
+          <h6 class="text-white text-xl font-medium">
+            Branding and Identity Design
+          </h6>
+          <p
+            class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+            Our creative agency is a team of professionals focused on helping
+            you...
+          </p>
+          <img src="./src/images/right-arrow-1.svg" alt="Arrow" class="w-8 h-8 p-1 bg-[#ff9800] rounded-full" />
+        </div>
+        <div
+          class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-10 py-8 group overflow-hidden">
+          <h6 class="text-white text-xl font-medium">
+            Website Design and Development
+          </h6>
+          <p
+            class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+            Our creative agency is a team of professionals focused on helping
+            you...
+          </p>
+          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+            class="w-8 h-8 p-1 bg-[#ff9800] rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8" />
+        </div>
+        <div
+          class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+          <h6 class="text-white text-xl font-medium">
+            Advertising and Marketing Compaigns
+          </h6>
+          <p
+            class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+            Our creative agency is a team of professionals focused on helping
+            you...
+          </p>
+          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+            class="w-8 h-8 p-1 bg-[#ff9800] rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8" />
+        </div>
+        <div
+          class="animated-border border-t border-l border-r border-b border-zinc-900 hover:border-t-4 hover:border-t-[#ff9800] transition duration-300 ease-in-out px-12 py-8 group overflow-hidden">
+          <h6 class="text-white text-xl font-medium">
+            Creative Consulting and Development
+          </h6>
+          <p
+            class="text-white font-light py-12 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500">
+            Our creative agency is a team of professionals focused on helping
+            you...
+          </p>
+          <img src="./src/images/right-arrow-1.svg" alt="Arrow"
+            class="w-8 h-8 p-1 bg-[#ff9800] rounded-full transition-all duration-500 group-hover:w-8 group-hover:h-8" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-white">
 
     <!-- 4th section -->
-<div class="bg-white ">
-<div class="px-40 py-20 ">
-<div class="flex items-center justify-between">
-  <div>
-    <h5 class="text-[68px] leading-[90px] font-medium"><span>Meet</span> <br> <span>Our</span> <br> <span>Team</span></h5>
-    <p class="max-w-64 text-[#00000080]">
-      <span>We are talented individuals who are passionate about bringing ideas to life. With a diverse range of backgrounds and skill sets, we collaborate to produce effective solutions for our clien</span>
-    <span>Together, our creative team is committed to delivering impactful work that exceeds expectations.
+    <section data-bg="light" class="bg-transparent relative overflow-hidden z-0 ">
+      <!-- Centered SVG -->
+      <div class="absolute hidden lg:flex inset-0   justify-center items-center z-0 pointer-events-none opacity-40 ">
+        <svg viewBox="0 0 300 1404" xmlns="http://www.w3.org/2000/svg" class="w-[300px] h-auto text-[#D0D0D0]">
+          <g fill="#D0D0D0">
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+              d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" />
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+              d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M150 0L150 1404L149 1404L149 0L150 0Z" />
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+              d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" />
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" />
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+              d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" />
+            <path class="mil-move" fill-rule="evenodd" clip-rule="evenodd"
+              d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" />
+          </g>
+        </svg>
+      </div>
+      <div class="lg:px-40 px-8 lg:py-26 py-12 h-[1100px] max-w-full mx-auto relative">
 
-</span>
-    </p>
+
+        <!-- Content & Images -->
+        <div class="grid grid-cols-2 lg:grid-rows-2 items-start justify-between relative
+      ">
+
+          <div class="max-w-xl flex flex-col gap-6">
+            <h5 class="lg:text-[68px] lg:hidden text-4xl  leading-[90px] font-medium">
+              <span>Meet</span>
+              <span>Our</span>
+              <span>Team</span>
+            </h5>
+            <h5 class="lg:text-[68px] pt-12 lg:inline text-4xl  leading-[90px] font-medium">
+              <span class="pb-4">Meet</span><br>
+              <span class="pb-4">Our</span> <br>
+              <span class="pb-4">Team</span>
+            </h5>
+            <p class="text-[#00000080] lg:max-w-72 font-light pt-4">
+              We are talented individuals who are passionate about bringing
+              ideas to life. With a diverse range of backgrounds and skill sets,
+              we collaborate to produce effective solutions for our clients.
+            </p>
+            <p class="text-[#00000080] lg:max-w-72 font-light pt-4">
+              Together, our creative team is committed to delivering impactful
+              work that exceeds expectations.
+            </p>
+
+            <div class="pt-12">
+              <button
+                class="w-56 h-14 lg:h-20 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex items-center justify-between bg-[#ff9800] hover:bg-amber-500 px-6">
+                <span class="text-black text-xs tracking-wide">READ MORE</span>
+                <img src="./src/images/right-arrow.svg" alt="Arrow" class="w-8 h-8 p-1 bg-black rounded-full" />
+              </button>
+
+
+            </div>
+            <h5 class="py-16 text-3xl max-w-64 lg:inline hidden"><span class="font-thin">We</span> <span
+                class="font-medium">delivering</span>
+              <span class="font-thin">exceptional</span> <span class="font-medium">results.</span>
+            </h5>
+          </div>
+          <h5 class="py-16 text-xl lg:hidden"><span class="font-thin">We</span> <span
+              class="font-medium">delivering</span>
+            <span class="font-thin">exceptional</span> <span class="font-medium">results.</span>
+          </h5>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 xl:-ml-8 items-center justify-center gap-6 pt-[40px] lg:pt-16  mx-auto">
+
+            <div class="flex flex-col gap-6">
+              <div class="group relative w-full h-full overflow-hidden shadow-md">
+                <!-- Image -->
+                <img src="./src/images/anna.jpg" alt="Anna"
+                  class="w-full h-full object-cover transition-all duration-500 group-hover:opacity-60" />
+
+                <!-- Yellow border (bottom) -->
+
+
+                <!-- Overlay with details (initially hidden) -->
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                  <div
+                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                  </div>
+                  <h4 class="text-white text-xl hover:text-[#ff9800] font-semibold mb-1">Anna Oldman</h4>
+                  <p class=" text-lg text-zinc-500 mb-4">Art Director</p>
+
+                  <div class="flex gap-3">
+                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="group relative w-full h-full overflow-hidden shadow-md">
+                <!-- Image -->
+                <img src="./src/images/oscar.jpg" alt="Anna"
+                  class="w-full h-full object-cover transition-all duration-500 group-hover:opacity-60" />
+
+                <!-- Yellow border (bottom) -->
+
+
+                <!-- Overlay with details (initially hidden) -->
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                  <div
+                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                  </div>
+                  <h4 class="text-white hover:text-[#ff9800] text-xl font-semibold mb-1">Oscar freeman</h4>
+                  <p class=" text-lg text-zinc-600 mb-4">frontend dev</p>
+
+                  <div class="flex gap-3">
+                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6 mt-16 ">
+
+              <h5 class=" text-xl lg:inline xl:hidden"><span class="font-thin">We</span> <span
+                  class="font-medium">delivering</span>
+                <span class="font-thin">exceptional</span> <span class="font-medium">results.</span>
+              </h5>
+              <p class=" text-sm hidden xl:flex items-center"> <span class="text-[#ff9800]"> *</span><span
+                  class="text-zinc-400">The founders of our agency </span></p>
+              <div class="group relative w-full h-full overflow-hidden shadow-md">
+                <!-- Image -->
+                <img src="./src/images/emma.jpg" alt="Anna"
+                  class="w-full h-full object-cover transition-all duration-500 group-hover:opacity-60" />
+
+                <!-- Yellow border (bottom) -->
+
+
+                <!-- Overlay with details (initially hidden) -->
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                  <div
+                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                  </div>
+                  <h4 class="text-white text-xl hover:text-[#ff9800] font-semibold mb-1">Emma newman</h4>
+                  <p class="text-zinc-600 text-lg mb-4">Founder</p>
+
+                  <div class="flex gap-3">
+                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="group relative w-full h-full overflow-hidden shadow-md">
+                <!-- Image -->
+                <img src="./src/images/lisa.jpg" alt="Anna"
+                  class="w-full h-full object-cover transition-all duration-500 group-hover:opacity-60" />
+
+                <!-- Yellow border (bottom) -->
+
+
+                <!-- Overlay with details (initially hidden) -->
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex flex-col justify-center items-center p-4 text-center">
+                  <div
+                    class="absolute bottom-0 left-0 h-[5px] bg-[#ff9800] w-0 group-hover:w-full transition-all duration-500">
+                  </div>
+                  <h4 class="text-white hover:text-[#ff9800] text-xl font-semibold mb-1">Lisa trueman</h4>
+                  <p class="text-zinc-600 text-lg mb-4">UI/UX Designer</p>
+
+                  <div class="flex gap-3">
+                    <a href="/"><img src="./src/images/b-4.png" class="w-8 h-8" alt="Behance" /></a>
+                    <a href="/"><img src="./src/images/ball.png" class="w-8 h-8" alt="Dribbble" /></a>
+                    <a href="/"><img src="./src/images/twitt.png" class="w-8 h-8" alt="Twitter" /></a>
+                    <a href="/"><img src="./src/images/github.png" class="w-8 h-8" alt="GitHub" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
-</div>
-</div>
-</div>
-    
-  </body>
+  <!-- 5th section -->
+  <section data-bg="dark" class="bg-[#f2f2f2] lg:pt-32 lg:py-32 px-8 lg:px-0 py-26 ">
+    <div class="flex gap-12 text-[#696969] items-center justify-center lg:justify-end">
+      <div>
+        <p class=" font-light text-center pb-12">
+          <span>Customer reviews are a valuable source</span><br />
+          <span>of information for both business and consumers.</span>
+        </p>
+      </div>
+
+      <!-- Vertical left border -->
+      <div class="w-64 h-px hidden lg:inline bg-[#696969]"></div>
+    </div>
+    <div class="lg:px-40  relative overflow-x-hidden">
+      <div class="relative">
+        <div class="pb-4 lg:pb-0 gap-3">
+          <h5 class="lg:text-[68px] text-4xl text-center  ">
+            <span class="font-medium">Customer</span>
+            <span class="font-thin">Voices</span> <span class="">:</span> <span
+              class="font-medium lg:hidden ">Hear</span>
+            <br /> <span class="font-medium hidden lg:inline">Hear</span><span class="font-medium"> What</span>
+            <span class="font-thin">They Say</span>
+          </h5>
+        </div>
+      </div>
+
+      <div id="imageContainer"
+        class="flex flex-wrap items-center justify-center  gap-y-12 max-w-full pt-12 mx-auto  py-12"></div>
+
+      <div class="lg:flex items-center justify-center hidden">
+        <img class="w-10 h-10" src="./src/images/double-quotes.png" alt="" />
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button id="prevBtn" class="w-36 h-36 overflow-hidden text-center rounded-full ">
+          <img src="./src/images/black.svg" alt="Arrow" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
+        </button>
+        <img class="w-10 h-10 lg:hidden" src="./src/images/double-quotes.png" alt="" />
+
+
+
+        <div id="descContainer"
+          class="pt-8 text-center text-zinc-500 lg:inline hidden   lg:text-lg text-lg font-light "></div>
+
+        <button id="nextBtn" class="w-36 h-36 overflow-hidden text-center rounded-full rotate-180 ">
+          <img src="./src/images/black.svg" alt="Arrow" class="w-8 h-8 p-1 bg-[#e6e6e6] rounded-full" />
+        </button>
+        <!-- Description will be inserted here -->
+
+      </div>
+      <div id="descContainer" class="pt-8 text-center text-zinc-500 lg:hidden   lg:text-lg text-lg font-light "></div>
+    </div>
+
+    <div class="w-full relative">
+      <div class="swiper default-carousel">
+        <div class="swiper-wrapper">
+          <!-- one logo per slide -->
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-1.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-2xl h-36 flex items-center justify-center">
+              <img src="./src/images/logo-2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6th section -->
+  <section data-bg="light" class="lg:px-40 py-26 px-8 bg-white">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-between">
+      <h6 class="lg:text-[42px] text-3xl font-medium mb-3">Popular Publications:</h6>
+      <div class="flex items-center justify-center gap-4">
+        <p class="uppercase text-sm">view all</p>
+        <button id="nextBtn" class="overflow-hidden text-center rounded-full rotate-180">
+          <img src="./src/images/black.svg" alt="Arrow" class="w-8 h-8 p-1 bg-gray-400 rounded-full" />
+        </button>
+      </div>
+    </div>
+    <div class="mt-8 flex flex-col lg:flex-row items-center justify-center gap-4">
+      <div class="img-1">
+        <div class="overflow-hidden">
+          <img src="./src/images/design-1.jpg" alt="Zoom Image"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-125 hover:origin-center" />
+        </div>
+        <div class="flex flex-col gap-4 mt-12">
+          <p class="py-6">
+            <span class="uppercase text-[#ff9800]">technology</span>
+            <span> MAY 24 2023</span>
+          </p>
+          <p class="lg:text-[28px] text-2xl tracking-normal font-medium max-w-sm">
+            How to Become a Graphic Designer in 10 simple steps
+          </p>
+          <p class="text-gray-400 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium nulla ipsum quibusdam error veritatis voluptate...
+          </p>
+          <div class="flex items-center justify-start gap-4">
+            <p class="uppercase text-sm">read more</p>
+            <button id="nextBtn" class="overflow-hidden text-center rounded-full rotate-180">
+              <img src="./src/images/black.svg" alt="Arrow" class="w-8 h-8 p-1 bg-gray-400 rounded-full" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-2">
+        <div class="overflow-hidden">
+          <img src="./src/images/design-2.jpg" alt="Zoom Image"
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-125 hover:origin-center" />
+        </div>
+        <div class="flex flex-col gap-4 pt-12">
+          <p class="my-6">
+            <span class="uppercase text-[#ff9800] tracking-wider">technology</span>
+            <span> MAY 24 2023</span>
+          </p>
+          <p class="lg:text-[28px] text-2xl tracking-normal font-medium max-w-sm">
+            How to Become a Graphic Designer in 10 simple steps
+          </p>
+          <p class="text-gray-400 font-light">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium nulla ipsum quibusdam error veritatis voluptate...
+          </p>
+          <div class="flex items-center justify-start gap-4">
+            <p class="uppercase text-sm">read more</p>
+            <button id="nextBtn" class="overflow-hidden text-center rounded-full rotate-180">
+              <img src="./src/images/black.svg" alt="Arrow" class="w-8 h-8 p-1 bg-gray-400 rounded-full" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7th section -->
+
+  <footer data-bg="dark" class="bg-black">
+    <div class="xl:px-40 px-8 py-24 grid md:grid-cols-[1fr_1fr_1fr] gap-x-12 grid-cols-1">
+      <div class="grid-col-1 flex flex-col gap-6">
+        <h6 class="text-[42px] font-medium text-white">Ashley.</h6>
+        <p class="text-zinc-600">Subscribe our newsletter:</p>
+        <button
+          class="py-6 overflow-hidden text-center rounded-full shadow-md hover:scale-105 transition-transform duration-300 flex items-center justify-between bg-[#1a1a1a] hover:bg-white px-6">
+          <input type="text" class="uppercase outline-none placeholder-gray-500  py-2 text-xs tracking-widest"
+            placeholder="enter our email" />
+          <img src="./src/images/right-arrow-1.svg" alt="Arrow" class="w-8 h-8 p-1 bg-[#ff9800] rounded-full" />
+        </button>
+
+        <div class="pt-24 xl:flex items-center hidden  justify-start">
+          <img src="./src/images/b-4.png" class="w-12 h-12 bg-black" alt="" />
+          <img src="./src/images/ball.png" class="w-12 h-12" alt="" />
+          <img src="./src/images/twitt.png" class="w-12 h-12 border-2 border-black" alt="" />
+          <img src="./src/images/github.png" class="w-10 h-10" alt="" />
+        </div>
+
+        <p class="pt-10 text-zinc-600 hidden xl:block">
+          &#169; Copyright 2023 - Mil. All Rights Reserved.
+        </p>
+      </div>
+
+      <div class="grid-col-2 pt-12 flex flex-col gap-6">
+        <div class="flex flex-col gap-6">
+          <h6 class=" text-xl lg:text-base text-[#ff9800] font-medium">Home</h6>
+          <h6 class=" text-xl lg:text-base text-white font-medium">Portfolio</h6>
+          <h6 class=" text-xl lg:text-base text-white font-medium">Services</h6>
+          <h6 class=" text-xl lg:text-base text-white font-medium">Contact</h6>
+          <h6 class=" text-xl lg:text-base text-white font-medium">Blog</h6>
+        </div>
+        <div class=" xl:flex  flex-col gap-16 hidden pt-6 lg:pt-0">
+          <p class="pt-16 text-white font-medium text-lg">Canada</p>
+          <p class="text-zinc-600">
+            71 South Los Carneros <br />
+            Road, California <br />
+            +51174 705 812
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-col-3 flex flex-col gap-6">
+        <div class="flex flex-col gap-6 pt-6">
+          <p class="text-zinc-600">Privacy Policy</p>
+          <p class="text-zinc-600">Terms and conditions</p>
+          <p class="text-zinc-600">Cookie Policy</p>
+          <p class="text-zinc-600">Careers</p>
+        </div>
+
+        <div class=" xl:hidden flex-col  lg:pt-0">
+          <p class="lg:pt-24 text-white font-medium text-lg">Canada</p>
+          <p class="text-zinc-600">
+            71 South Los Carneros <br />
+            Road, California <br />
+            +51174 705 812
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-12">
+          <p class="xl:pt-34 text-white font-medium text-lg">Germany</p>
+          <p class="text-zinc-600">
+            Leehove 40, 2678 MC<br />
+            De Lier, Netherlands <br />
+            +31174 705 811
+          </p>
+        </div>
+
+        <div class="xl:pt-24 xl:hidden flex items-center  justify-start">
+          <img src="./src/images/b-4.png" class="w-12 h-12 bg-black" alt="" />
+          <img src="./src/images/ball.png" class="w-12 h-12" alt="" />
+          <img src="./src/images/twitt.png" class="w-12 h-12 border-2 border-black" alt="" />
+          <img src="./src/images/github.png" class="w-10 h-10" alt="" />
+        </div>
+
+        <p class="mt-10 xl:hidden text-zinc-600  ">
+          &#169; Copyright 2023 - Mil. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="./script.js" defer></script>
+</body>
+
 </html>

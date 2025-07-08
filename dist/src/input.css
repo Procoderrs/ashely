@@ -4,4 +4,5 @@
 
 @theme{
   --font-display:"Outfit",sans-serif;
+  --breakpoint-custom:87.5rem; /* 1440px */
 }
