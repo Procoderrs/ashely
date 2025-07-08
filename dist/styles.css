@@ -408,12 +408,15 @@ svg {
 
 
 
+
+
 .pentagon-4 {
   position: absolute;
-  width: 100px; /* 300px / 3 */
+  width: 100px;
   opacity: 0.8;
 }
 
+/* Top ring (Faces 1–5) */
 .pentagon-4:nth-child(1) {
   transform: rotateY(0deg) translateZ(69px) rotateX(26.5deg);
 }
@@ -430,33 +433,42 @@ svg {
   transform: rotateY(288deg) translateZ(69px) rotateX(26.5deg);
 }
 
+/* Bottom ring (Faces 6–10) */
 .pentagon-4:nth-child(6) {
-  transform: rotateY(0deg) translateZ(-69px) rotateX(-26.5deg);
+  bottom: 0;
+  transform: rotateY(0deg) translateZ(-69px) rotateX(206.5deg);
 }
 .pentagon-4:nth-child(7) {
-  transform: rotateY(72deg) translateZ(-69px) rotateX(-26.5deg);
+  bottom: 0;
+  transform: rotateY(72deg) translateZ(-69px) rotateX(206.5deg);
 }
 .pentagon-4:nth-child(8) {
-  transform: rotateY(144deg) translateZ(-69px) rotateX(-26.5deg);
+  bottom: 0;
+  transform: rotateY(144deg) translateZ(-69px) rotateX(206.5deg);
 }
 .pentagon-4:nth-child(9) {
-  transform: rotateY(216deg) translateZ(-69px) rotateX(-26.5deg);
+  bottom: 0;
+  transform: rotateY(216deg) translateZ(-69px) rotateX(206.5deg);
 }
 .pentagon-4:nth-child(10) {
-  transform: rotateY(288deg) translateZ(-69px) rotateX(-26.5deg);
+  bottom: 0;
+  transform: rotateY(288deg) translateZ(-69px) rotateX(206.5deg);
 }
 
+/* Caps (Top and Bottom) */
 .pentagon-4:nth-child(11) {
   transform: translateZ(69px) rotateX(-90deg);
 }
 .pentagon-4:nth-child(12) {
+  bottom: 0;
   transform: translateZ(-69px) rotateX(90deg);
 }
 
+/* Pentagon Sides */
 .pentagon-4 div {
   position: absolute;
-  width: 100px; /* 300px / 3 */
-  height: 69px; /* 207px / 3 */
+  width: 100px;
+  height: 69px;
   transform-origin: bottom;
   border-top: 1px solid rgb(88, 86, 86);
 }
@@ -467,15 +479,17 @@ svg {
 .pentagon-4 div:nth-child(4) { transform: rotate(216deg); }
 .pentagon-4 div:nth-child(5) { transform: rotate(288deg); }
 
+/* Dodecahedron Container */
 .dodecahedron-4 {
   position: absolute;
-  left: 20%;
-  top: 0%;
-  width: 13.33px; /* 40px / 3 */
-  height: 223px;   /* 669px / 3 */
+  top: 15%;
+left: 20%;
+  width: 13px;
+  height: 223px;
   transform-style: preserve-3d;
   animation: rotate 60s infinite linear;
 }
+
 
 
 
