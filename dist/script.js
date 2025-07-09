@@ -184,28 +184,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const header=document.getElementsByClassName('.header')
-const menu=document.getElementsByClassName('.menu').querySelector('img');
 
-const observer=new IntersectionObserver(
-  (entries)=>{
-    entries.forEach((entry)=>{
-      if(entry.isIntersecting){
-        const bgType=entry.target.dataset.bg;
 
-        if(bgType==='light'){
-          header.classList.remove('text-white');
-          header.classList.add('text-black');
-          menu.classList.remove('invert')
-        } else{
-          header.classList.remove('text-black');
-          header.classList.add('text-white');
-          menu.classList.add('invert')
-        }
+
+
+
+
+
+
+
+ const backToTop = document.getElementById('backToTop');
+const section = document.getElementById('banner');
+
+const observer_1 = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      backToTop.classList.add('hidden');
+    } else {
+      backToTop.classList.remove('hidden');
+    }
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+observer_1.observe(banner);
+
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+
+
+const zoomImage = document.querySelector('.zoom-img');
+
+const zoomObserver = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      zoomImage.classList.add('scale-100', 'opacity-100');
+      zoomImage.classList.remove('scale-125', 'opacity-0');
+    }
+  },
+  {
+    threshold: 0.3, // Trigger when 30% of the image is visible
+  }
+);
+
+zoomObserver.observe(zoomImage);
+
+
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        entry.target.classList.remove('opacity-0', 'translate-y-10');
+        observer.unobserve(entry.target); // Optional: run animation once
       }
-    })
-  },{root:null,threshold:0.2}
-)
+    },
+    {
+      threshold: 0.1,
+    }
+  );
 
-const sections=document.querySelectorAll('[data-bg]')
-sections.forEach((section)=>observer.observe(section))
+  const fadeSection = document.getElementById('text-fade-up');
+  if (fadeSection) observer.observe(fadeSection);
+

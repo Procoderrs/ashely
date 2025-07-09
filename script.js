@@ -218,3 +218,40 @@ backToTop.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+
+
+
+const zoomImage = document.querySelector('.zoom-img');
+
+const zoomObserver = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      zoomImage.classList.add('scale-100', 'opacity-100');
+      zoomImage.classList.remove('scale-125', 'opacity-0');
+    }
+  },
+  {
+    threshold: 0.3, // Trigger when 30% of the image is visible
+  }
+);
+
+zoomObserver.observe(zoomImage);
+
+
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        entry.target.classList.remove('opacity-0', 'translate-y-10');
+        observer.unobserve(entry.target); // Optional: run animation once
+      }
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  const fadeSection = document.getElementById('text-fade-up');
+  if (fadeSection) observer.observe(fadeSection);
+

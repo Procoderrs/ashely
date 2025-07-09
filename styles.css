@@ -587,3 +587,10 @@ left: 70%;
 .group:hover .circle-text {
   fill: white;
 }
+
+
+.animated-border {
+  position: relative;
+}
+
+
