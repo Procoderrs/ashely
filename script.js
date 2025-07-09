@@ -255,3 +255,27 @@ zoomObserver.observe(zoomImage);
   const fadeSection = document.getElementById('text-fade-up');
   if (fadeSection) observer.observe(fadeSection);
 
+
+
+ 
+  const menuIcon = document.getElementById('cross');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const closeBtn = document.getElementById('closeOverlay');
+
+  menuIcon.addEventListener('click', () => {
+    menuOverlay.classList.remove('hidden');
+    // Wait one animation frame to allow the browser to apply "display: flex"
+    requestAnimationFrame(() => {
+      menuOverlay.classList.add('opacity-100');
+      menuOverlay.classList.remove('opacity-0');
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('opacity-100');
+    menuOverlay.classList.add('opacity-0');
+    // Hide after fade-out completes (matches transition duration)
+    setTimeout(() => {
+      menuOverlay.classList.add('hidden');
+    }, );
+  });

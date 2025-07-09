@@ -14,6 +14,19 @@
 
 <body class="font-display ">
 
+
+
+  <div id="menuOverlay" class="fixed inset-0 bg-black text-white z-50 hidden opacity-0 transition-opacity duration-700 ease-in-out flex flex-col items-start px-30 justify-center space-y-8">
+  <button id="closeOverlay" class="absolute top-10 right-20 text-white text-3xl"><img class="w-6 h-6" src="./src/images/cross.svg" />
+  </button>
+
+    <a href="#" class="text-[34px] text-[#ff9800] font-medium transition">Homepage</a>
+    <a href="#" class="text-[34px] transition">Portfolio</a>
+    <a href="#" class="text-[34px]  transition">Services</a>
+  <a href="#" class="text-[34px]  transition">Newsletter</a>
+  <a href="#" class="text-[34px]  transition">Other Pages</a>
+</div>
+
   <!-- <div id="pre-heading" class="flex justify-center items-center h-screen flex-col gap-2 text-4xl font-medium">
     <h2>
       <span>Pioneering</span>
@@ -330,12 +343,15 @@
 
   <!-- sidebar  -->
   <div class="hidden xl:block  text-white header">
-    <div class="fixed left-16 top-8 z-30 mix-blend-difference">
+    <div class="fixed left-16 top-8  mix-blend-difference">
       <h1 class="text-[42px] text-white bg-transparent   ">A.</h1>
+
+
+
     </div>
     <!-- navbar -->
     <nav class="right-16 hidden xl:block lg:fixed top-12 z-30 bg-transparent mix-blend-difference menu">
-      <img class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
+      <img id="cross" class="w-8 text-white  rounded" src="./src/images/menu.svg" alt="" />
     </nav>
     <div
       class="fixed top-[550px] left-16 h-[350px] w-[300px] mix-blend-difference p-4 z-30 transform -rotate-90 origin-top-left">
@@ -374,7 +390,7 @@
       <div
         class="xl:hidden flex items-center bg-black p-6 fixed top-0 justify-between text-white   border-zinc-800 border-b z-[999]   w-full">
         <h2 class="text-white  text-4xl"><a href="/">A.</a></h2>
-        <img class="w-8 text-white " src="./src/images/menu.svg" alt="" />
+        <img  class="w-8 text-white " src="./src/images/menu.svg" alt="" />
       </div>
 
       <div class="max-w-screen-2xl w-full mx-auto">
