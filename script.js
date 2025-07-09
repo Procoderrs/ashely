@@ -184,28 +184,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const header=document.getElementsByClassName('.header')
-const menu=document.getElementsByClassName('.menu').querySelector('img');
 
-const observer=new IntersectionObserver(
-  (entries)=>{
-    entries.forEach((entry)=>{
-      if(entry.isIntersecting){
-        const bgType=entry.target.dataset.bg;
 
-        if(bgType==='light'){
-          header.classList.remove('text-white');
-          header.classList.add('text-black');
-          menu.classList.remove('invert')
-        } else{
-          header.classList.remove('text-black');
-          header.classList.add('text-white');
-          menu.classList.add('invert')
-        }
-      }
-    })
-  },{root:null,threshold:0.2}
-)
 
-const sections=document.querySelectorAll('[data-bg]')
-sections.forEach((section)=>observer.observe(section))
+
+
+
+
+
+
+ const backToTop = document.getElementById('backToTop');
+const section = document.getElementById('banner');
+
+const observer_1 = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      backToTop.classList.add('hidden');
+    } else {
+      backToTop.classList.remove('hidden');
+    }
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+observer_1.observe(banner);
+
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});

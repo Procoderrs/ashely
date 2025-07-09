@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
 
@@ -82,7 +86,7 @@ body {
 }
 .dodecahedron {
   position: absolute;
-  right: 0%;
+  right: 20%;
   top: 0%;
   width: 40px; /* Increase size */
   height: 669px;
@@ -571,4 +575,15 @@ left: 70%;
   height: 223px;
   transform-style: preserve-3d;
   animation: rotate 60s infinite linear;
+}
+
+
+.circle-text
+ {
+  fill: #525252; /* original gray */
+  transition: fill 0.3s ease;
+}
+
+.group:hover .circle-text {
+  fill: white;
 }
